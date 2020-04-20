@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -10,6 +11,11 @@
   <h2>Covid-19 News</h2>
 </div>
 
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">Notícias</a>
+    <a href="#contact">Contato</a>
+  </div>
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
@@ -71,17 +77,29 @@
     <div class="card">
       <h2>Sobre mim</h2>
       <img class="fakeimg" src="images/felipe.jpg" style="height:180px; width: auto; margin: auto;"/>
-      <p>Engenheiro Eletricista, especializado em computação e telecomunições. Interassado em tudo o que envolva tecnologia.</p>
+      <p>Sou Felipe Prestes, engenheiro eletricista, especialista em computação e telecomunições. Interessado em tudo o que envolva tecnologia.</p>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
+      <h3>Redes sociais</h3>
+      <a href="https://www.linkedin.com/in/feprestes/" class="fa fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/feprestes" class="fa fa-github" target="_blank"></a>
     </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <div class="card">
+        <h3>Entre em contato</h3>
+        <div class="container">
+            <form action="/action_page.php">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Seu nome">
+
+            <label for="lname">Sobrenome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+
+            <label for="subject">Assunto</label>
+            <textarea id="subject" name="subject" placeholder="Escreva a sua mensagem..." style="height:200px"></textarea>
+
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
   </div>
 </div>
